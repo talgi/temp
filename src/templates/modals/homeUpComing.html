@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="lottory-headline">
+
+            FUTURE DRAWS
+        </div>
+    </div>
+</div>
+<div class="lottories-prizes-list">
+    <ul>
+        {{#each all}}
+        <li class="the-prizes-list">
+            <div class="date">
+                <span class="date-bg" {{#if selected}} style="background-color: #D4B92A" {{/if}} >
+                <span class="date-text">{{this.end_date}}</span>
+            </div>
+            <div class="the-prize">{{this.name}}</div>
+        </li>
+        {{/each}}
+    </ul>
+</div>

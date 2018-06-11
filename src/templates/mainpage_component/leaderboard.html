@@ -1,0 +1,54 @@
+<div id="tabs" class="leaderborad_tabs" role="tablist">
+    <ul class="flippers-tabs">
+        <li class="flippers-switcher active"><a href="#world-flippers" aria-controls="world-flippers" role="tab" data-toggle="tab">WORLD FLIPPERS</a></li>
+        <li class="flippers-switcher">/ <a href="#friends-flippers" aria-controls="friends-flippers" role="tab" data-toggle="tab">friends FLIPPERS</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="world-flippers" class="tab-pane fade in active">
+            <ul class="flippers">
+                {{#each topPlayers}}
+                <a class='headline-button-all' data-id="{{this.user_id}}" href="#">
+                    <li class="flipper black">
+                        <div class="flippers-picture {{../IMAGEURL}}">
+                            {{#if this.image}}
+                                <div class="flippers-image-inside" style="background-image: url({{../../IMAGEURL}}{{this.image}});"></div>
+                            {{else}}
+                                <div class="flippers-image-inside"></div>
+                            {{/if}}
+                        </div>
+                        <div class="flippers-place"><span class="flipper-place">{{this.rank}}</span></div>
+                        <div class="flippers-info">
+                            <div class="name">{{this.first_name}} {{this.last_name}}</div>
+                            <div class="score">{{this.score}}</div>
+                            <div class="star"><span class="icon-star"></span></div>
+                        </div>
+                    </li>
+                </a>
+                {{/each}}
+            </ul>
+        </div>
+        <div id="friends-flippers" class="tab-pane fade">
+            <ul class="flippers">
+                {{#each topFriends}}
+                <a class='headline-button-all' data-id="{{user_id}}" href="#">
+                    <li class="flipper black">
+                        <div class="flippers-picture {{../IMAGEURL}}">
+                            {{#if image}}
+                                <div class="flippers-image-inside" style="background-image: url({{../../IMAGEURL}}{{image}});"></div>
+                            {{else}}
+                                <div class="flippers-image-inside"></div>
+                            {{/if}}
+                        </div>
+                        <div class="flippers-place"><span class="flipper-place">{{this.rank}}</span></div>
+                        <div class="flippers-info">
+                            <div class="name">{{this.first_name}} {{this.last_name}}</div>
+                            <div class="score">{{this.score}}</div>
+                            <div class="star"><span class="icon-star"></span></div>
+                        </div>
+                    </li>
+                </a>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

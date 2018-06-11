@@ -1,0 +1,39 @@
+#fix{
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	color: #000;
+	position: fixed;
+	line-height: 30px;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	text-align: center;
+	border: 1px solid #000;
+	&:after{
+		content: 'LG';
+		text-align: center;
+	}
+}
+
+@media (max-width: @screen-xs-max) {#fix{&:after{content: 'XS';}};  }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {#fix{&:after{content: 'SM';}};  }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {#fix{&:after{content: 'MD';}};  }
+@media (min-width: @screen-lg-min) {
+	#fix{&:after{content: 'LG';}};
+}
+
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+}
+
+
+
+@media (max-width: @screen-xs-max) {
+
+}

@@ -1,0 +1,22 @@
+{
+    "name": "flipmania.com",
+    "version": "1.0.4",
+    "dependencies": {
+        "jquery": "~2.1.4",
+        "requirejs": "~2.1.18",
+        "underscore-amd": "~1.5.2",
+        "backbone-amd": "~1.1.0",
+        "require-handlebars-plugin": "~0.11.3",
+        "lesshat": "~3.0.2",
+        "almond": "~0.3.1",
+        "modernizr": "~2.8.3",
+        "bootstrap": "~3.3.5",
+        "moment": "~2.10.3",
+        "swiper": "~3.1.0",
+        "alertify": "~0.3.10",
+        "odometer": "~0.4.7",
+        "jquery.nicescroll": "~3.6.0",
+        "waitForImages": "~2.1.0",
+        "mobile-detect": "hgoebl/mobile-detect.js#~1.2.1"
+    }
+}

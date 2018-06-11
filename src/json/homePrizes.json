@@ -1,0 +1,24 @@
+//url: api/home-prizes
+//Method: GET
+{
+	"list": [{
+			"image": "src",
+			"text": "str"
+	},
+		{
+			"image": "src",
+			"text": "str"
+    },
+		{
+			"image": "src",
+			"text": "str"
+    },
+		{
+			"image": "src",
+			"text": "str"
+    },
+		{
+			"image": "src",
+			"text": "str"
+    }]
+}

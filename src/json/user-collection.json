@@ -1,0 +1,143 @@
+//url: api/user-collection
+//Method: GET
+
+{
+	"superstars": [
+        [{
+			"bounsPoint": 800,
+			"boards": [{
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+        	}, {
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }, {
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }]
+        }],
+        [{
+			"bounsPoint": 800,
+			"boards": [{
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }, {
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }, {
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }]
+        }],
+    ],
+	"gold": [
+        [{
+			"bounsPoint": 800,
+			"boards": [{
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }, {
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }, {
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }]
+        }],
+        [{
+			"bounsPoint": 800,
+			"boards": [{
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }, {
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }, {
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }]
+        }],
+    ],
+	"titanium": [
+        [{
+			"bounsPoint": 800,
+			"boards": [{
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }, {
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }, {
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }]
+        }],
+        [{
+			"bounsPoint": 800,
+			"boards": [{
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }, {
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }, {
+				"image": "",
+				"title": "",
+				"text": "",
+				"isActive": 0,
+				"score": 125,
+            }]
+        }],
+    ],
+}

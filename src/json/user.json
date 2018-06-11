@@ -1,0 +1,17 @@
+//url: api/login
+//Method: Post
+
+{
+	"success": 1,
+	"error": ["err1", "err2"],
+	"user": {
+		"id": 1,
+		"isFacebook": 0,
+		"name": "str",
+		"image": "str",
+		"score": 123,
+		"medals": [{}],
+		"flipborards-amount": 15,
+		"flipborards-total": 35
+	}
+}

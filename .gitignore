@@ -1,0 +1,22 @@
+node_modules
+.tmp
+src/components
+public_html/app
+html/video/bgLoop.mov
+html/video/challange 2.mov
+html/video/open 2.mov
+html/video/stars earned.mov
+html/video/trophy.mov
+
+
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project

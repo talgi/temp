@@ -1,0 +1,43 @@
+<header>
+    <div class="settings">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span class="icon-cog"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <span class="icon-caret-up"></span>
+                <li><a href="#" class="sign-out">Sign Out</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#inner/faq">FAQ's</a></li>
+ <!--                <li><a href="#" id="test1">WelcomeModal</a></li>
+
+ <li><a href="#" id="test3">YouWin</a></li>
+ <li><a href="#" id="test5">YouLose</a></li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="header-img-mobile main hidden-md hidden-lg"></div>
+    <video autoplay loop  id="bgvid" class="animationVideoMain hidden-xs hidden-sm">
+        <source src="{{PUBLICURL}}video/bgLoop.mp4" type="video/mp4">
+        <source src="{{PUBLICURL}}video/bgLoop.ogv" type="video/ogv">
+        <source src="{{PUBLICURL}}video/bgLoop.webm" type="video/webm">
+    </video>
+    <div class="charecters-smalleer hidden-xs hidden-sm">
+        <div class="right-charecters">
+            <img src="{{PUBLICURL}}img/header-img-charecters-smaller-2.png" alt="charecters" class="img-responsive">
+        </div>
+        <div class="left-charecters">
+            <img src="{{PUBLICURL}}img/header-img-charecters-smaller-1.png" alt="charecters" class="img-responsive">
+        </div>
+    </div>
+    <div class="logo"><img src="{{PUBLICURL}}img/logo-flip-madness.png" alt="logo flip madness" class="img-responsive"></div>
+    <div class="entercode">
+        <form action="" method="POST" class="form-inline" role="form">
+            <div class="form-group">
+                <label class="sr-only" for="code">ENTER CODE</label>
+                <input type="text" class="form-control" id="code" placeholder="ENTER CODE">
+            </div>
+            <button type="submit" class="btn btn-go" id="onEnterCode">GO</button>
+        </form>
+    </div>
+</header>

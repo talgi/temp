@@ -1,0 +1,27 @@
+{{#each booklets}}
+    {{#if active}}
+    <div class="cards" style="display: none">
+    {{else}}
+    <div class="cards disable" style="display: none">
+    {{/if}}
+        <div class="card-pictures">
+            <div class="album-pic">
+                <div class="back-pic">
+                    <div class="top-pic">
+                        <div class="left-side-pic"></div>
+                        <div class="line-pic"></div>
+                        <div class="card-img" style="background-image:url('{{../IMAGEURL}}{{imageActive}}');"></div>
+
+                        <div class="notification top" {{#if this.total_books}} {{else}} style="display:none;"{{/if}} >
+                            <span class="notification-text">{{total_books}}</span>
+                        </div>
+
+                        <div class="album-star">{{points}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="album-headline">{{title}}</div>
+        <div class="album-text">{{text}}</div>
+    </div>
+{{/each}}

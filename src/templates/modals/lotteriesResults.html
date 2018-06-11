@@ -1,0 +1,148 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="lottory-headline lottory-headline-paddings" style="opacity: 1;">Draws Results</div>
+    </div>
+</div>
+
+<div class="container">
+
+    {{#each lotteries}}
+    <div class="row">
+        <div class="winners-line center-block">
+            <div class="the-next-challenge center-block pull-left" style="opacity: 1;">
+                <div class="the-prize-bg">
+                    <div class="the-prize-blue-shadow">
+                        <div class="the-prize-white-shadow">
+                            <div class="the-prize-back purple-back">
+                                <div class="the-prize-the-picture purple-shadow" style="background-image: url({{../IMAGEURL}}{{this.lot_image}})"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="">
+                    <div class="the-prize-date">
+                        <span class="the-prize-bg purple-bg" data-points='{{this.required_points}}'></span>
+                        <span class="the-prize-text">{{this.end_date}}</span>
+                    </div>
+                </a>
+                <div class="meet-text">{{this.prizes}}</div>
+            </div>
+            <div class="winners">
+
+
+                {{#each this.users}}
+                <div class="winners-picture" data-toggle="tooltip" data-placement="top" title="{{this.name}}" style="background-image: url({{../../IMAGEURL}}{{this.image}});"></div>
+
+                {{/each}}
+
+            </div>
+            
+           
+        </div>
+    </div>
+    {{/each}}
+</div>
+<!--
+<div class="container">
+    <div class="row">
+        <div class="winners-line center-block">
+            <div class="left-winners">
+                <div class="winners-picture"></div>
+                <div class="winners-picture"></div>
+                <div class="winners-picture"></div>
+            </div>
+            <div class="the-next-challenge center-block pull-left" style="opacity: 1;">
+                <div class="the-prize-bg">
+                    <div class="the-prize-blue-shadow">
+                        <div class="the-prize-white-shadow">
+                            <div class="the-prize-back blue-back">
+                                <div class="the-prize-the-picture blue-shadow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="">
+                    <div class="the-prize-date">
+                        <span class="the-prize-bg blue-bg"></span>
+                        <span class="the-prize-text">aug, 6, 2015</span>
+                    </div>
+                </a>
+                <div class="meet-text meet-text-26">Signed t-shirts & HAT</div>
+            </div>
+            <div class="right-winners">
+                <div class="winners-picture"></div>
+                <div class="winners-picture"></div>
+                <div class="winners-picture"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="winners-line center-block">
+            <div class="left-winners">
+                <div class="winners-picture"></div>
+                <div class="winners-picture"></div>
+                <div class="winners-picture"></div>
+            </div>
+            <div class="the-next-challenge center-block pull-left" style="opacity: 1;">
+                <div class="the-prize-bg">
+                    <div class="the-prize-blue-shadow">
+                        <div class="the-prize-white-shadow">
+                            <div class="the-prize-back grey-back">
+                                <div class="the-prize-the-picture grey-shadow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="">
+                    <div class="the-prize-date">
+                        <span class="the-prize-bg grey-bg"></span>
+                        <span class="the-prize-text">SEP, 9, 2015</span>
+                    </div>
+                </a>
+                <div class="meet-text meet-text-26">champion belt republic</div>
+            </div>
+            <div class="right-winners">
+                <div class="winners-picture"></div>
+                <div class="winners-picture"></div>
+                <div class="winners-picture"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="winners-line center-block">
+            <div class="left-winners">
+                <div class="winners-picture"></div>
+                <div class="winners-picture"></div>
+                <div class="winners-picture"></div>
+            </div>
+            <div class="the-next-challenge center-block pull-left" style="opacity: 1;">
+                <div class="the-prize-bg">
+                    <div class="the-prize-blue-shadow">
+                        <div class="the-prize-white-shadow">
+                            <div class="the-prize-back yellow-back">
+                                <div class="the-prize-the-picture yellow-shadow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="">
+                    <div class="the-prize-date">
+                        <span class="the-prize-bg yellow-bg"></span>
+                        <span class="the-prize-text">nov, 11, 2015</span>
+                    </div>
+                </a>
+                <div class="meet-text meet-text-26">Meet legendary john cena</div>
+            </div>
+            <div class="right-winners">
+                <div class="winners-picture"></div>
+                <div class="winners-picture"></div>
+                <div class="winners-picture"></div>
+            </div>
+        </div>
+    </div>
+</div>
+-->

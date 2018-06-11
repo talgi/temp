@@ -1,0 +1,31 @@
+<div class="ajax-loading"></div>
+
+<div class="trophyVideo-holder">
+    <video id="videoTrophy" style="display:none"  preload>
+        <source src="{{PUBLICURL}}video/trophy.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+        <source src="{{PUBLICURL}}video/trophy.ogv" type='video/ogg; codecs="theora, vorbis"' />
+    </video>
+    <canvas width="750" height="1618" id="trophybuffer"></canvas>
+    <canvas width="750" height="809" id="trophyoutput"></canvas>
+</div>
+
+
+<div class="ChallengeAchieved-holder">
+    <video id="videoChallengeAchieved" style="display:none"  preload>
+        <source src="{{PUBLICURL}}video/challange.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+        <source src="{{PUBLICURL}}video/challange.ogv" type='video/ogg; codecs="theora, vorbis"' />
+    </video>
+    <canvas width="720" height="1440" id="ChallengeAchievedbuffer"></canvas>
+    <canvas width="720" height="720" id="ChallengeAchievedoutput"></canvas>
+</div>
+
+<div class="openpack">
+    <div class="center">
+        <video id="openVideo" style="display:none"  preload>
+            <source src="{{PUBLICURL}}video/open_book_1.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+            <source src="{{PUBLICURL}}video/open_book_1.ogv" type='video/ogg; codecs="theora, vorbis"' />
+        </video>
+        <canvas width="720" height="1168" id="buffer"></canvas>
+        <canvas width="720" height="584" id="output"></canvas>
+    </div>
+</div>

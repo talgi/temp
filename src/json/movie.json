@@ -1,0 +1,8 @@
+//url: api/movie
+//Method: GET
+{
+	"title": "str",
+	"text": "str",
+	"image": "str",
+	"youtube": "id"
+}

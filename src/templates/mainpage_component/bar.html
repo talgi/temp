@@ -1,0 +1,102 @@
+       <div class="bar">
+            <div class="background-medium-screen">
+                <div class="user">
+                    <div class="user-image">
+                        <div class="notification" style="display: none">
+                            <span class="notification-text"></span>
+                        </div>
+
+                        <div class="notification-box">
+                            <div class="notification-header">Notifications</div>
+                            <div class="notification-content">
+                                <ul>
+
+                                </ul>
+                            </div>
+                            <div class="notification-arrow">
+                            </div>
+                        </div>
+
+                        {{#if image}}
+                            <div class="img img-responsive" style="background-image: url({{IMAGEURL}}{{image}})"></div>
+                        {{else}}
+                            <div class="img img-responsive"></div>
+                        {{/if}}
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">{{name}}</div>
+                        <div class="user-medal">
+                            <ul>
+                                {{#each medals}}
+                                <li>
+                                    <div class="medal {{#if this.active}} {{else}}darken-medal{{/if}}" data-trigger="hover"  data-container="body" data-toggle="tooltip" data-placement="top" data-html="true" title="<div class='medal-tooltip'><span class='txt'>{{this.text}}</span><br><img class='img-star' src='{{../PUBLICURL}}img/star.png'>    <span class='num'>{{this.reword}}</span><span class='txt2'> bonus points</span><br><div class='t-progress'><div class='yellow-progress-bar' style='width:{{this.percent}}%; margin-top: -0.5px;'><div class='progress'><div class='progress-bar progress-bar-warning' role='progressbar' aria-valuemin='0' aria-valuemax='100' style='width:100%'><span class='sr-only'></span></div></div></div></div><span class='t1'>{{this.user_views}}</span><span class='t2'>/{{this.views}}</span> </div>"></div>
+                                </li>
+                                {{/each}}
+                                <li>
+                                    <div class="question-mark" data-container="body" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<div class='questionTooltip'>unlock medals with album views to get more bonus points!</div>">?</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar">
+                    <div class="mobile-nav">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+                        <ul class="type-menu">
+                            {{#each collaction.collaction}}
+                            <li>
+                                <a href="#" class="active">
+                                    <span class="bg bg-{{@key}}"></span>
+                                    <span class="text">{{@key}}</span>
+                                </a>
+                            </li>
+                            {{/each}}
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="progress-score-bar">
+                <div class="progress-bar-holder">
+                    <div class="slash"></div>
+
+                    <div class="bar-holder">
+                        <div class="bar-bg">
+                            <div class="bar-yellow" style="width:0%">
+                                <span class="bg"></span>
+                                <span class="light"></span>
+                                <span class="more-light"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="points-holder">
+                            {{#each barAchivments}}
+                            <div class="point" style="left:{{this.percent}}%" data-container="body" data-toggle="tooltip" data-placement="top" data-html="true" title="<div style='padding:10px 0;'><span style='color: #262137;font-size: 16px;font-family: Oswald;'>{{this.text}}</span><br><span style='color: #3406cd;font-size: 16px;font-family: Oswald;'>{{this.required_points}}</span><span class='icon-star' style='color: #efb647;font-size: 18px;margin-left: 5px;'></span></div>">
+                                <div class="point-picture" style="background-image: url({{../IMAGEURL}}{{image}})"></div>
+                                <div class="point-line"></div>
+                            </div>
+                            {{/each}}
+                         </div>
+                    </div>
+                    
+                </div>
+
+                <div class="your-score">
+                    <div class="score">
+                        <span class="score-number">{{score}}</span>
+                        <span class="score-star"><img src="{{PUBLICURL}}img/star.png" alt="small star" class="star-image-score"></span>
+                    </div>
+                    <div class="score-information">
+                        <span class="gold-color">{{myBooks}}</span>/{{totalBooks}} <span class="smaller-font-size">FLIPBOOKS </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>

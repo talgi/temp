@@ -1,0 +1,83 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="lottory-headline" style="opacity: 1;">
+            DON'T MISS IT!
+            <br>UPCOMING DRAW
+        </div>
+        {{#if fill_lot_details}}
+         <a class="yellow-btn-join">JOIN DRAW</a>
+        {{/if}}
+    </div>
+</div>
+
+<div class="row">
+    {{#each lotteris}}
+    <div class="col-md-3">
+        <div class="challengesBoxes">
+            <div class="the-next-challenge center-block">
+                <div class="time-counting" {{#if this.lottery}} data-end="{{this.lottery.end}}" {{/if}}></div>
+                <div class="the-prize-bg">
+                    <div class="the-prize-blue-shadow">
+                        <div class="the-prize-white-shadow">
+                            <div class="the-prize-back">
+                                <div class="the-prize-the-picture" style="background-image: url({{../IMAGEURL}}{{this.image}});"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a>
+                <div class="the-prize-date">
+                    {{#if this.lottery.end_date}}
+                    <span class="the-prize-bg"></span>
+                    <span class="the-prize-text">{{this.lottery.end_date}}</span>
+                    {{/if}}
+                </div>
+                </a>
+                <div class="meet-text meet-text-26">{{this.text}}</div>
+            </div>
+            <div class="enter-lottery popUp center-block">
+                <div class="lottery-progress-bar">
+                    <div class="yellow-progress-bar">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{this.percent}}%">
+                                <span class="sr-only"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-numbers">{{this.user_points}}/{{this.required_points}}</div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="lottory-headline">
+            {{#if fill_lot_details}}
+            JOIN THE DRAWS ABOVE AND AUTOMATICALLY PARTICIPATE IN IT’S<br>
+            FOLLOWING FUTURE DRAWS
+            {{else}}
+            FUTURE DRAWS
+            {{/if}}
+        </div>
+    </div>
+</div>
+<div class="lottories-prizes-list">
+    <ul>
+        {{#each all}}
+        <li class="the-prizes-list">
+            <div class="date">
+                <span class="date-bg" {{#if selected}} style="background-color: #D4B92A" {{/if}} >
+                <span class="date-text">{{this.end_date}}</span>
+            </div>
+            <div class="the-prize">{{this.name}}</div>
+        </li>
+        {{/each}}
+    </ul>
+</div>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flip Madness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="fix">
+    </div>
+    <div class="all">
+        <header class="smaller-header">
+            <div class="logo animated fadeIn" style="-webkit-animation-delay: 0.1s !important;"><img src="img/logo-flip-madness.png" alt="logo flip madness" class="img-responsive"></div>
+        </header>
+        <div class="content-full-width">
+            <div class="inside-content">
+                <div class="profile-picture-bar">
+                    <div class="profile-picture-circle animated fadeIn">
+                        <div class="profile-picture"></div>
+                        <span class="icon-camera"></span>
+                    </div>
+                </div>
+                <div class="settings-form">
+                    <form role="form">
+                        <div class="row center-form-block">
+                            <div class="col-md-6 settings-form-width margin-right-form animated fadeIn">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>MY DEATILS & PASSWORD</h1></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="firstName">First Name</label>
+                                            <br>
+                                            <input type="text" class="form-control small-input-width margin-right-input" id="firstName">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="lastName">Last Name</label>
+                                            <br>
+                                            <input type="text" class="form-control small-input-width" id="lastName">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="email">Email</label>
+                                            <br>
+                                            <input type="email" class="form-control small-input-width margin-right-input" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="dateOfBirth">Date of birth</label>
+                                            <br>
+                                            <input type="text" class="form-control small-input-width" id="dateOfBirth">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="editPasswordHide">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="mypassword">Password</label>
+                                            <a onclick="showEditPass()"><span class="edit-btn">edit</span></a>
+                                            <br>
+                                            <input type="password" class="form-control big-input-width" id="mypassword">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row hidden-edit-pass" id="editPassword">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="newPassword">New Password</label>
+                                            <br>
+                                            <input type="password" class="form-control small-input-width margin-right-input" id="newPassword">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="verifyPassword">Verify Password</label>
+                                            <br>
+                                            <input type="password" class="form-control small-input-width" id="verifyPassword">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 settings-form-width margin-left-form animated fadeIn">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>CONTACT <span class="smaller-headline-form">(In Case we need to send you prizes!)</span></h1></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="country">Country</label>
+                                            <br>
+                                            <input type="text" class="form-control small-input-width margin-right-input" id="country">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="city">City</label>
+                                            <br>
+                                            <input type="text" class="form-control small-input-width" id="city">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="adress">Adress</label>
+                                            <br>
+                                            <input type="text" class="form-control big-input-width" id="adress">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="postal">Postal</label>
+                                            <br>
+                                            <input type="text" class="form-control small-input-width margin-right-input" id="postal">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="phoneNumber">Phone Number</label>
+                                            <br>
+                                            <input type="text" class="form-control small-input-width" id="phoneNumber">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-default regular-update-btn">Update</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="footer-links">
+                    <li><a href="">About flipMadness</a></li>
+                    <li><a href="">How to play</a></li>
+                    <li><a href="">Where to buy?</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Privecy Policy</a></li>
+                    <li><a href="termsandconditions.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="footer-social">
+                    <a href="">
+                        <li><span class="icon-twitter"></span></li>
+                    </a>
+                    <a href="">
+                        <li><span class="icon-facebook"></span></li>
+                    </a>
+                    <a href="">
+                        <li><span class="icon-youtube"></span></li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="footer-credits">
+                    <li>
+                        <a href=""><img src="img/logo-flip.png" alt="flip logo" class="img-responsive logo-flip"></a>
+                        <a href=""><img src="img/logo-wwe.png" alt="wwe logo" class="img-responsive logo-wwe"></a>
+                    </li>
+                    <li class="credits">©2015 FlipMadness, INC. All rights reseved.</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/waypoints/lib/jquery.waypoints.js"></script>
+    <script src="js/profileanimation.js"></script>
+</body>
+
+</html>

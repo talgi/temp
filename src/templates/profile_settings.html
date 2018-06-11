@@ -1,0 +1,138 @@
+<div class="all" xmlns="http://www.w3.org/1999/html">
+        <header class="smaller-header">
+            <button class="inner-back" type="button">BACK</button>
+            <div class="logo animated fadeIn" style="-webkit-animation-delay: 0.1s !important;"><img src="{{PUBLICURL}}img/logo-flip-madness.png" alt="logo flip madness" class="img-responsive"></div>
+        </header>
+        <div class="content-full-width">
+            <div class="inside-content">
+                <div class="profile-picture-bar">
+                    <div class="profile-picture-circle animated fadeIn">
+                        <div class="profile-picture" style="background-image: url('{{IMAGEURL}}{{image}}')"></div>
+                        <span class="icon-camera"></span>
+                        <input type="file"  id="user_image">
+                    </div>
+                </div>
+                <div class="settings-form">
+                    <form role="form" id="settings-form">
+                        <div  style="display: none" class="user_image"></div>
+                        <div class="row center-form-block">
+                            <div class="col-md-6 settings-form-width margin-right-form animated fadeIn">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>MY DETAILS</h1></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="firstName">First Name</label>
+                                            <br>
+                                            <input type="text" class="form-control small-input-width margin-right-input" value="{{first_name}}" id="firstName" name="first_name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="lastName">Last Name</label>
+                                            <br>
+                                            <input type="text" class="form-control small-input-width" value="{{last_name}}"  name="last_name" id="lastName">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="email">Email</label>
+                                            <br>
+                                            <input type="email" class="form-control small-input-width margin-right-input" name="email" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-fields">
+                                            <div class="lable-field" style="margin-bottom: 5px;">Date of birth</div>
+                                            <div class="input-sign">
+                                                <input type="text" id="dateOfBirthDay" class="form-control day" {{#if birthday}} value="{{day}}" {{/if}} placeholder="DD">
+                                                <input type="text" id="dateOfBirthMonth" class="form-control month" {{#if birthday}} value="{{month}}" {{/if}} placeholder="MM">
+                                                <input type="text" id="dateOfBirthYear" class="form-control year"  {{#if birthday}} value="{{year}}" {{/if}} placeholder="YYYY">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row" id="editPassword">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="verifyPassword">Verify current password</label>
+                                            <br>
+                                            <input type="password" class="form-control small-input-width"  name="verify_password" id="verifyPassword">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="newPassword">New Password</label>
+                                            <br>
+                                            <input type="password" class="form-control small-input-width margin-right-input" name="password" id="newPassword">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 settings-form-width margin-left-form animated fadeIn">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>CONTACT <span class="smaller-headline-form">(in case we need to send you prizes!)</span></h1></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="country">Country</label>
+                                            <br>
+                                            <input type="text" class="form-control small-input-width margin-right-input" value="{{country}}"  name="country"   id="country">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="city">City</label>
+                                            <br>
+                                            <input type="text" class="form-control small-input-width" value="{{city}}"  name="city" id="city">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="address">Address</label>
+                                            <br>
+                                                <input type="text" class="form-control big-input-width" value="{{address}}"  name="address" id="address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="phoneNumber">Phone Number</label>
+                                            <br>
+                                            <input type="text" class="form-control big-input-width" value="{{phone}}"  name="phone" id="phoneNumber">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="lable-field" for="phoneNumber">Postal</label>
+                                            <br>
+                                            <input type="text" class="form-control big-input-width" value="{{postal}}"  name="postal" id="postal">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-default regular-update-btn">Update</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<img id="settings-loader" src="{{PUBLICURL}}img/ajax-loader.gif" style="display: none; position: fixed;bottom: 0; left: 0;">

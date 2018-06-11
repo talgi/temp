@@ -1,0 +1,143 @@
+<div class="row">
+    <div class="col-md-12 no-padding">
+        <div class="user-headline-details">
+            <div class="user-d pull-left">
+                {{#if name}}
+                <div class="name">{{name}}</div>
+                {{/if}}
+                {{#if name}}
+                <div class="score"> - {{score}} <span class="icon-star"></span></div>
+                {{/if}}
+                {{#if name}}
+                <div class="score"> - {{userBooklets}}/{{totalBooklets}} FLIPBOOKS</span></div>
+                {{/if}}
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="row">
+    <div class="col-md-12 no-padding">
+        <div class="collection-bg">
+            <div class="row">
+                <div class="col-md-12 no-padding">
+                    <div class="head">
+                        <div class="purple-inside">
+                            <div class="headline-with-text">
+                                <div class="header-bg grey"></div>
+                                <div class="header-text">TITANIUM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="head-line grey-back"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cards-bg-white-border">
+                    <div class="cards-bg">
+                        {{#each titanium}}
+                            {{#if active}}
+                            <div class="card titanium">
+                                {{#if this.total_books}}
+
+
+                                <div class="notification top" >
+                                    <span class="notification-text">{{total_books}}</span>
+                                </div>
+                                {{/if}}
+                            {{else}}
+                            <div class="card titanium disable">
+                            {{/if}}
+                                <div class="album-picture-black">
+                                    <div class="collection-black-img" style="background-image: url({{../IMAGEURL}}{{imageActive}});"></div>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 no-padding">
+        <div class="collection-bg">
+            <div class="row">
+                <div class="col-md-12 no-padding">
+                    <div class="head">
+                        <div class="purple-inside">
+                            <div class="headline-with-text">
+                                <div class="header-bg gold"></div>
+                                <div class="header-text">GOLD</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="head-line gold-back"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cards-bg-white-border">
+                    <div class="cards-bg">
+                        {{#each gold}}
+                            {{#if active}}
+                            <div class="card gold">
+                                {{#if this.total_books}}
+
+
+                                <div class="notification top" >
+                                    <span class="notification-text">{{total_books}}</span>
+                                </div>
+                                {{/if}}
+                            {{else}}
+                            <div class="card gold disable">
+                            {{/if}}
+                                <div class="album-picture-black">
+                                    <div class="collection-black-img" style="background-image: url({{../IMAGEURL}}{{imageActive}});"></div>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 no-padding">
+        <div class="collection-bg">
+            <div class="row">
+                <div class="col-md-12 no-padding">
+                    <div class="head">
+                        <div class="purple-inside">
+                            <div class="headline-with-text">
+                                <div class="header-bg purple"></div>
+                                <div class="header-text">SUPERSTARS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="head-line purple-back"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cards-bg-white-border">
+                    <div class="cards-bg">
+                        {{#each superstars}}
+                            {{#if active}}
+                            <div class="card superstars" >
+                                {{#if this.total_books}}
+
+
+                                <div class="notification top" >
+                                <span class="notification-text">{{total_books}}</span>
+                            </div>
+                                {{/if}}
+                            {{else}}
+                            <div class="card superstars disable">
+                            {{/if}}
+                                <div class="album-picture-black">
+                                    <div class="collection-black-img" style="background-image: url({{../IMAGEURL}}{{imageActive}});"></div>
+                                </div>
+                            </div>
+                        {{/each}}
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

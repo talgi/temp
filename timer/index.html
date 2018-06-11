@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<script src="//code.jquery.com/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="../src/js/helpers/jquery.countdown/jquery.countdown.css">
+</head>
+<body>
+<div id="defaultCountdown"></div>
+<div id="defaultCountdown2"></div>
+
+<script src="../src/js/helpers/jquery.countdown/jquery.plugin.js"></script>
+<script src="../src/js/helpers/jquery.countdown/jquery.countdown.min.js"></script>
+<script language="javascript">
+
+var since1 = new Date()
+//since1 = new Date(); 
+newYear = new Date(1439240400000); 
+$('#defaultCountdown').countdown({
+		until: newYear,
+		serverSync:since1
+}); 
+
+$('#defaultCountdown2').countdown({
+		until: newYear,
+		serverSync:ahead5Mins
+}); 
+ function ahead5Mins() { 
+    var server = new Date(); 
+    server.setMinutes(server.getMinutes() + 5); 
+    return server; 
+}
+
+</script>
+
+
+</body>
+</html>
