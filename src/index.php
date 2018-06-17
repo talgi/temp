@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>FlipMadness - LET THE MADNESS BEGIN</title>
 
-        <meta name="description" content="WWE - The most exciting wrestling competition is now here! Find the best wrestlers, collect them all and complete the FlipMadness album. Enjoy the passion and the entertainment that the WWE brings! Start Now!">
+        <meta name='description' content="WWE - The most exciting wrestling competition is now here! Find the best wrestlers, collect them all and complete the FlipMadness album. Enjoy the passion and the entertainment that the WWE brings! Start Now!">
 
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0" />
 
         <meta property="og:type" content="website">
         <meta property="og:url" content="http://flipmadness.co.uk/">
@@ -41,11 +41,19 @@
 
         <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
 
-        <link rel="stylesheet" href="app/css/c44037dd.main.css">
+        <!-- build:css(.tmp) app/css/main.css -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- endbuild -->
 
+        <!-- build:remove -->
+        <script>
+            var debug = true;
+        </script>
+        <!-- endbuild -->
 
-
-        <script src="app/js/vendor/modernizr.js"></script>
+        <!-- build:js app/js/vendor/modernizr.js -->
+        <script src="components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
 
                 <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -98,9 +106,15 @@
             <div class="site-loader-logo"></div>
             <h3>Loading The Madness</h3>
         </div>
-        <script src="app/js/vendor.js"></script>
+        <!-- build:js app/js/vendor.js -->
+        <!-- bower:js -->
+        <script src="components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
 
-        <script src="app/js/b0d07f27.main.js"></script>
+        <!-- build:js app/js/main.js -->
+        <script data-main="js/main" src="components/requirejs/require.js"></script>
+        <!-- endbuild -->
 
 
     </div>

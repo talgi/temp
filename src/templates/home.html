@@ -67,8 +67,6 @@
                             <div class="album-pic">
                                 <div class="back-pic">
                                     <div class="top-pic">
-                                        <div class="left-side-pic"></div>
-                                        <div class="line-pic"></div>
                                         <div class="background-image john-cena-back-img"></div>
                                     </div>
                                 </div>
@@ -91,8 +89,6 @@
                             <div class="album-pic">
                                 <div class="back-pic">
                                     <div class="top-pic">
-                                        <div class="left-side-pic"></div>
-                                        <div class="line-pic"></div>
                                         <div class="background-image john-cena-top-img"></div>
                                     </div>
                                 </div>
@@ -105,118 +101,7 @@
         </div>
     </div>
 
-
-    <div class="prizes">
-        <div class="row">
-            <div class="col-md-6 yellow-bg">
-                <div class="leaderboard">
-                    <div class="leader-headline">be a LEADER!</div>
-                    <div class="board">
-                        <ul class="flippers">
-                            {{#each (limit topPlayers 5)}}
-                                <li>
-                                    <a class="flipper purple"  data-id="{{this.user_id}}" href="#">
-                                        <div class="flippers-picture">
-                                            {{#if image}}
-                                                <div class="flippers-image-inside" style="background-image: url('{{../../IMAGEURL}}{{image}}');"></div>
-                                            {{else}}
-                                                <div class="flippers-image-inside"></div>
-                                            {{/if}}
-                                        </div>
-                                        <div class="flippers-place"><span class="flipper-place">{{math @index "+" 1}}</span></div>
-                                        <div class="flippers-info">
-                                            <div class="name">{{first_name}} {{last_name}}</div>
-                                            <div class="score">{{score}}</div>
-                                            <div class="star"><span class="icon-star"></span></div>
-                                        </div>
-                                    </a>
-                                </li>
-                            {{/each}}
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 undo-padding">
-                <div class="prizes-slider">
-                    <div class="prizes-headline">WIN THE PRIZES</div>
-                    <div class="slider swiper-container">
-                        <div class="swiper-wrapper">
-                            {{#each prizes}}
-                                <div class="swiper-slide">
-                                    <div class="prizes-images">
-                                        <div class="prizes-picture" style="background-image: url({{../IMAGEURL}}{{image}});">
-                                            <img src="{{../IMAGEURL}}{{image}}" alt="prizes" class="img-responsive">
-                                        </div>
-                                        <div class="prizes-description">{{text}}</div>
-                                    </div>
-                                </div>
-                            {{/each}}
-                        </div>
-
-                        <!-- <div class="circle-pages swiper-pagination">
-                            <a href="" class="active"><span class="icon-circle"></span></a>
-                            <a href=""><span class="icon-circle"></span></a>
-                            <a href=""><span class="icon-circle"></span></a>
-                            <a href=""><span class="icon-circle"></span></a>
-                        </div> -->
-
-                        <div class="swiper-button-prev"><span class="icon-chevron-left"></span></div>
-                        <div class="swiper-button-next"><span class="icon-chevron-right"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="lottory">
-        <div class="lottory-content">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="lottory-headline">
-                        DON'T MISS IT!
-                        <br>UPCOMING DRAWS <a id='UPCOMINGLOTTORY' href="#myFifthModal">See All></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                {{#each nextLotteries}}
-                <div class="col-md-3">
-                    <div class="challengesBoxes">
-                        <div class="the-next-challenge center-block">
-                            <div class="time-counting" {{#if this.lottery}} data-end="{{this.lottery.end}}" {{/if}}></div>
-                            <div class="the-prize-bg">
-                                <div class="the-prize-blue-shadow">
-                                    <div class="the-prize-white-shadow">
-                                        <div class="the-prize-back">
-                                            <div class="the-prize-the-picture" style="background-image: url({{../IMAGEURL}}{{this.image}});"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <a>
-                            <div class="the-prize-date">
-                                {{#if this.lottery.end_date}}
-                                <span class="the-prize-bg"></span>
-                                <span class="the-prize-text">{{this.lottery.end_date}}</span>
-                                {{/if}}
-                            </div>
-                            </a>
-                            <div class="meet-text meet-text-26">{{this.text}}</div>
-                        </div>
-
-                    </div>
-                </div>
-                {{/each}}
-
-            </div>
-
-        </div>
-    </div>
     <div class="collect-now-footer">
-        <button type="button" class="btn collect-btn">COLLECT NOW</button>
     </div>
 </div>
 
