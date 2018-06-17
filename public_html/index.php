@@ -41,7 +41,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
 
-        <link rel="stylesheet" href="app/css/a1af09e3.main.css">
+        <link rel="stylesheet" href="app/css/4ae8bd34.main.css">
 
 
 
@@ -100,7 +100,7 @@
         </div>
         <script src="app/js/vendor.js"></script>
 
-        <script src="http://localhost:9000/js/main.js"></script>
+        <script src="app/js/4340c82a.main.js"></script>
 
 
     </div>

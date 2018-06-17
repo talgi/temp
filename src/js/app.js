@@ -137,11 +137,11 @@ define(function(require) {
 
 		App.prototype.vent = null;
 
-		//App.prototype.APIURL = 'http://52x.co/dev/framebyframe/public_html/api/';
-		//App.prototype.IMAGEURL = 'http://52x.co/dev/framebyframe/public_html/uploads/';
+		// App.prototype.APIURL = 'http://localhost:8000/api/';
+		// App.prototype.IMAGEURL = 'http://localhost:8000/uploads/';
 
-		App.prototype.APIURL = 'http://flipmadness.co.uk/api/';
-		App.prototype.IMAGEURL = 'http://flipmadness.co.uk/uploads/';
+		App.prototype.APIURL = 'http://pony.fbfsports.com/api/';
+		App.prototype.IMAGEURL = 'http://pony.fbfsports.com/uploads/';
 		App.prototype.PUBLICURL = 'app/';
 
 		App.prototype.notificationPopup = [];
